@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shoppingcompjudge"
+version = "0.1.0"
+description = "Lightweight evaluation framework for ShoppingComp (LLM-as-a-Judge + fast aggregation)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.40.0",
+  "pyyaml>=6.0.1",
+  "tqdm>=4.66.0",
+  "huggingface_hub>=0.23.0",
+]
+
+[project.scripts]
+shoppingcompjudge = "ShoppingCompJudge.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+# 只打包 ShoppingCompJudge（避免把 data/output/tools 等误识别为 package）
+include = ["ShoppingCompJudge*"]
+exclude = ["data*", "output*", "tools*", "scripts*"]
+
+[tool.setuptools.package-data]
+ShoppingCompJudge = [
+  "prompts.yaml",
+  "api_config.example.yaml",
+]
+
+
+
+

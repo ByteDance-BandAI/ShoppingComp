@@ -1,0 +1,26 @@
+# Copyright (c) 2026 ByteDance Ltd. and/or its affiliates
+
+# LLM API config template (SAFE TO COMMIT)
+#
+# Usage:
+# - Copy this file to `api_config.yaml` (which is gitignored), then fill in your own keys/endpoints.
+# - Or set env var `SHOPPINGCOMPJUDGE_API_CONFIG=/path/to/your/api_config.yaml`.
+#
+# Notes:
+# - If you use Azure OpenAI style endpoints, use `azure_endpoint` + `api_version` + `api_key`.
+# - If you use OpenAI-compatible gateway (e.g. Ark / proxy), use `base_url` + `api_key`.
+
+defaults:
+  max_tokens: 1024
+  temperature: 0.0
+  api_version: "2024-03-01-preview"
+
+models:
+  gpt-4o:
+    azure_endpoint: "https://YOUR_AZURE_RESOURCE.openai.azure.com/"
+    api_key: "YOUR_AZURE_API_KEY"
+
+  gemini-2.5-pro:
+    base_url: "https://YOUR_OPENAI_COMPATIBLE_BASE_URL"
+    api_key: "YOUR_API_KEY"
+
