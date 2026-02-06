@@ -123,9 +123,11 @@ For detailed formats and advanced options, see `ShoppingCompJudge/`.
 ---
 
 ## 📚 Citation
+```bibtex
 @article{tou2025shoppingcomp,
   title={ShoppingComp: Are LLMs Really Ready for Your Shopping Cart?},
   author={Tou, Huaixiao and Zeng, Ying and Ma, Cong and Li, Muzhi and Li, Minghao and Yuan, Weijie and Zhang, He and Jia, Kai},
   journal={arXiv preprint arXiv:2511.22978},
   year={2025}
 }
+```
