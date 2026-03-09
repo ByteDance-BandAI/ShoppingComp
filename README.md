@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2511.22978"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b"></a>
   <a href="https://huggingface.co/datasets/huaixiao/ShoppingComp"><img src="https://img.shields.io/badge/Dataset-HuggingFace-yellow"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Leaderboard-coming--soon-blue"></a>
+  <a href="https://bytedance-bandai.github.io/ShoppingComp-Leaderboard/"><img src="https://img.shields.io/badge/Leaderboard-live-blue"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green"></a>
 </p>
  
